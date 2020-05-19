@@ -17,4 +17,4 @@ service_watchtower
     └── config.json
 ```
 
-The `config.json` file is generated using [`docker login`](https://docs.docker.com/engine/reference/commandline/login/) and saved to `~/.docker/config.json` by default. Be sure to copy the file into `secrets` before launching the service with `docker-compose up -d`. Login details for `docker login` can be generated using GitLab's [Group Deploy Tokens](https://docs.gitlab.com/ee/user/project/deploy_tokens/#group-deploy-token), created at the topmost group level.
+The `config.json` file is generated using [`docker login`](https://docs.docker.com/engine/reference/commandline/login/) and saved to `~/.docker/config.json` by default. Be sure to copy the file into `secrets` before launching the service with `docker-compose up -d`. Login details for `docker login` can be generated using GitLab's [Group Deploy Tokens](https://docs.gitlab.com/ee/user/project/deploy_tokens/#group-deploy-token), created within the [`ccao-data-science---modeling`](https://gitlab.com/ccao-data-science---modeling) group.
