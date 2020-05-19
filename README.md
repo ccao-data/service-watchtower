@@ -8,7 +8,7 @@ The service will only scan/update images with the Docker label `com.centurylinkl
 
 To start this service, first connect to the Shiny server [via SSH](https://support.rackspace.com/how-to/connecting-to-a-server-using-ssh-on-linux-or-mac-os/) (ask IT for login details). Next, go to the folder containing this repository (usually `~/services/service_watchtower`) or clone the repo if it doesn't exist locally. Finally, start the service using [Docker Compose](https://docs.docker.com/compose/gettingstarted/) by typing `docker-compose up -d` while in the same folder as `docker-compose.yml`. 
 
-This service requires Docker login details in order to scan CCAO's private container registry. These details are passed to the service by placing a file, `config.json`, within a subdirectory called `secrets` within the main repository folder on the Shiny server. The directory structure should be:
+This service requires Docker login details in order to scan CCAO's private container registry. These details are passed to the service by placing a file, `config.json`, within a subdirectory of the main repository folder called `secrets`. The directory structure should be:
 
 ```
 service_watchtower
