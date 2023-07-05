@@ -1,7 +1,7 @@
 version: '3.6'
 
 services:
-  # Watchtower constantly scans the CCAO registry and pulls new images 
+  # Watchtower constantly scans the CCAO registry and pulls new images
   # when found
   watchtower:
     image: containrrr/watchtower
@@ -16,5 +16,5 @@ services:
       - WATCHTOWER_MONITOR_ONLY=true
       - WATCHTOWER_NO_RESTART=true
       - WATCHTOWER_LABEL_ENABLE=true
-      - WATCHTOWER_POLL_INTERVAL=120
+      - WATCHTOWER_POLL_INTERVAL=1280
     restart: always
