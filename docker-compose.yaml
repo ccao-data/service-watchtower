@@ -4,9 +4,8 @@ services:
   # Watchtower constantly scans the CCAO registry and pulls new images
   # when found
   watchtower:
-    image: containrrr/watchtower
+    image: containrrr/watchtower:latest
     container_name: watchtower
-    network_mode: none
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - ./secrets/config.json:/config.json
